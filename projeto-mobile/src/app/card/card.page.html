@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Meus dados</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="chevron-back" defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let dados of dadosAluno">
+    <ion-item>
+      <img src="assets/img/imagem1.jpg">
+    </ion-item>
+    <br>
+
+    <ion-card-subtitle color="dark" style="margin-left: 5px;"> Nome: {{dados.nome}}</ion-card-subtitle><br>
+    <ion-card-subtitle color="dark" style="margin-left: 5px;"> Idade: {{dados.idade}}</ion-card-subtitle><br>
+    <ion-card-subtitle color="dark" style="margin-left: 5px;"> CPF: {{dados.cpf}}</ion-card-subtitle><br>
+    <ion-card-subtitle color="dark" style="margin-left: 5px;"> Endereço: {{dados.endereco}}</ion-card-subtitle><br>
+
+  </ion-card>
+</ion-content>

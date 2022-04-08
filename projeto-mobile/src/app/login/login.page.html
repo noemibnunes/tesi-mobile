@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="formLogin">
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email" type="text" required></ion-input>
+    </ion-item>
+    <p *ngIf="formLogin.get('email').errors?.required" class="textoRequired"></p>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input formControlName="senha" type="password" required></ion-input>
+    </ion-item>
+    <p *ngIf="formLogin.get('senha').errors?.required" class="textoRequired"></p>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="success" expand="block" (click)="login()">Entrar</ion-button>
+        <br>
+        <a [routerLink]="['/']" class="small-text">Esqueceu a senha?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
