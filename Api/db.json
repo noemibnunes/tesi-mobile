@@ -1,0 +1,30 @@
+{
+  "aluno": [
+    {
+      "nome": "Noemi",
+      "cpf": "236.456.978-89",
+      "idade": "20",
+      "endereco": "Rua ali, 180",
+      "email": "noemi@gmail.com",
+      "senha": "123456"
+    }
+  ],
+  "disciplina": [
+    {
+      "id": 1,
+      "nome": "Programação WWW",
+      "professor": "Genilson",
+      "horario": "20h",
+      "qtdAluno": 20,
+      "periodo": "2022.1"
+    },
+    {
+      "id": 2,
+      "nome": "Dispositivos Portatéis",
+      "professor": "Ruan",
+      "horario": "20h",
+      "qtdAluno": 10,
+      "periodo": "2022.1"
+    }
+  ]
+}
